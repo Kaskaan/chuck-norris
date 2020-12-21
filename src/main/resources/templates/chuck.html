@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link rel="stylesheet" th:href="@{/css/chuck.css}" type="text/css"/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+    />
+    <meta charset="UTF-8" content="text/html" http-equiv="Content-Type"/>
+    <title>Jokes</title>
+</head>
+<body>
+<p class="joke" th:text="${joke}"></p>
+<a class="button" href="/"><strong>Generate Joke</strong></a>
+</body>
+</html>
