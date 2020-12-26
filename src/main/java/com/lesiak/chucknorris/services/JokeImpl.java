@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 public class JokeImpl implements JokeService {
     private final ChuckNorrisQuotes chuckNorrisQuotes;
 
-    public JokeImpl() {
-        chuckNorrisQuotes = new ChuckNorrisQuotes();
+    public JokeImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
+        this.chuckNorrisQuotes = chuckNorrisQuotes;
     }
 
     @Override
